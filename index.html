@@ -29,11 +29,16 @@
             body{
                 padding: 0;
                 margin: 0;
+                color: #434343;
             }
             ul {
                 list-style-type: none;
                 padding: 0;
                 margin: 0;
+            }
+            p {
+                margin-top: 0;
+                margin-bottom: 1rem;
             }
             .flex,
             .flex-center,
@@ -119,6 +124,103 @@
                 margin-top: 0;
                 margin-bottom: 15px;
             }
+            section .heading {
+                margin-top: 0;
+                margin-bottom: 30px;
+                color: #545e69;
+                font-size: 24px;
+            }
+            section .section-inner {
+                background: #fff;
+                padding: 30px;
+            }
+            main .content-panel {
+                padding: 60px 15px 15px 15px;
+            }
+            .content-panel section {
+                margin-bottom: 15px;
+            }
+            .label-new {
+                position: relative;
+                left: -8px;
+                top: 18px;
+                width: 158px;
+                padding: 10px 10px;
+                font-size: 15px;
+                font-weight: bold;
+                text-align: center;
+                text-transform: uppercase;
+                color: #fff;
+                background-color: #479FC8;
+                -webkit-transform: rotate(45deg) translate3d(0, 0, 0);
+                -moz-transform: rotate(45deg) translate3d(0, 0, 0);
+                -ms-transform: rotate(45deg) translate3d(0, 0, 0);
+                -o-transform: rotate(45deg) translate3d(0, 0, 0);
+            }
+            .b2-image {
+                position: relative;
+                display: inline-block;
+                padding-bottom: 20px;
+            }
+            .b2-image .ribbon {
+                position: absolute;
+                top: -4px;
+                right: -4px;
+                width: 110px;
+                height: 110px;
+                overflow: hidden;
+            }
+            .b2-image .ribbon .text {
+                font-family: 'Montserrat', sans-serif;
+                position: relative;
+                left: 14%;
+                top: 10%;
+                width: 100%;
+                padding: 10px 10px;
+                font-size: 15px;
+                font-weight: bold;
+                text-align: center;
+                text-transform: uppercase;
+                color: #fff;
+                background-color: #479FC8;
+                -webkit-transform: rotate(45deg) translate3d(0, 0, 0);
+                -moz-transform: rotate(45deg) translate3d(0, 0, 0);
+                -ms-transform: rotate(45deg) translate3d(0, 0, 0);
+                -o-transform: rotate(45deg) translate3d(0, 0, 0);
+                background: #3AAA64;
+            }
+            .b2-image .ribbon .text:before,
+            .b2-image .ribbon .text:after {
+                content: '';
+                position: absolute;
+                bottom: -5px;
+                border-top: 5px solid #276582;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+            }
+            .b2-image .ribbon .text:before {
+                left: 0;
+            }
+            .b2-image .ribbon .text:after {
+                right: 0;
+            }
+            .btn-cta-secondary {
+                font-size: 1rem;
+                line-height: 1.5;
+                border-radius: .25rem;
+                display: inline-block;
+                -webkit-transition: all 0.4s ease-in-out;
+                -moz-transition: all 0.4s ease-in-out;
+                -ms-transition: all 0.4s ease-in-out;
+                -o-transition: all 0.4s ease-in-out;
+                font-family: 'Montserrat', arial, sans-serif;
+                padding: 8px 16px;
+                background: #479FC8;
+                border: 1px solid #479FC8;
+                color: #fff;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
         </style>
     </head>
     <body>
@@ -147,7 +249,46 @@
                     <a href="/"><i class="fas fa-paper-plane"></i> Contact Me</a>
                 </div>
             </section>
-            <section></section>
+            <div class="content-panel">
+                <!-- Block 2 -->
+                <section id="block-2-panel">
+                    <div class="section-inner">
+                        <h2 class="heading">About Me</h2>
+                        <div class="content">
+                            <p>Write a brief intro about yourself. It's a good idea to include your personal 
+                                interests and hobbies as well. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                                Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis 
+                                dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec. 
+                                Commodo ligula eget dolor. Aenean massa.</p>
+                        </div>
+                    </div>
+                </section>
+                <!-- Block 3 -->
+                <section id="block-3-panel">
+                    <div class="section-inner">
+                        <h2 class="heading">Latest Projects</h2>
+                        <h3 class="heading-2">Appify</h3>
+                        <p class="des">The perfect Bootstrap 4 admin template for app developers</p>
+                        
+                        <div class="content">
+                            <div class="b2-image">
+                                <img width="100%" src="images/project-featured.jpg">
+                                <div class="ribbon">
+                                    <div class="text">New</div>
+                                </div>
+                            </div>
+                            <p>You can promote your main project here. Suspendisse in tellus dolor. 
+                            Vivamus a tortor eu turpis pharetra consequat quis non metus. 
+                            Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, 
+                            eget iaculis ante dolor non turpis. Ut enim ad minima veniam, 
+                            quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
+                        </div>
+                        <div class="flex-center-center">
+                            <a class="btn-cta-secondary"><i class="fas fa-thumbs-up"></i> Back my project</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </main>
     </body>
 </html>
